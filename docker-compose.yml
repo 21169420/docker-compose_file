@@ -6,32 +6,24 @@ services:
       - "8000:80"
     volumes: 
       - trainvol
-    deploy: 
-      replicas: 3
   movie:
     image: movie:v1
     ports:
       - "8001:80"
     volumes:
       - movievol
-    deploy: 
-      replicas: 3
   loan:
     image: loan:v1
     ports:
       - "8002:80"
     volumes:
       - loanvol
-    deploy: 
-      replicas: 3
   dth:
     image: dth:v1
     ports:
       - "8003:80"
     volumes:
       - dthvol
-    deploy: 
-      replicas: 3
-
+ 
 
 
